@@ -11,3 +11,11 @@ func CheckPattern(char, word []string) bool {
 	}
 	return true
 }
+
+func TrimFound(length int, word []string) []string {
+	for i, val := range word[0 : len(word)-1] {
+		// fmt.Println(val[length:])
+		word[i] = val[length:]
+	}
+	return word
+}
