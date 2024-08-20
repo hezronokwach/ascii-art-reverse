@@ -15,6 +15,9 @@ func CheckPattern(char, word []string) bool {
 	return true
 }
 
+/*
+TrimFound removes the matched character patterns from the beginning of each line in the provided word slice. It returns the modified word slice with trimmed lines.
+*/
 func TrimFound(length int, word []string) []string {
 	for i, val := range word[0 : len(word)-1] {
 		// fmt.Println(val[length:])
