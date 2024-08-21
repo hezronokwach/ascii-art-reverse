@@ -37,6 +37,11 @@ func Args() {
 
 	sliceadBanner := reverse.SliceFile(bannerFile)
 	file, err := reverse.ReadFile(arg[10:])
+	for i := 0; i <= len(file)-1; i++ {
+		if len(file[1]) != len(file[i]) {
+			fmt.Println("Error in file")
+		}
+	}
 	if err {
 		printUsage()
 		return
