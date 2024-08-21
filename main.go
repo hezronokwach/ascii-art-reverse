@@ -1,7 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"ascii-art-reverse/arguments"
+)
 
 func main() {
-	fmt.Println()
+	arguments.Args()
 }

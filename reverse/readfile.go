@@ -1,4 +1,10 @@
-package functions
+package reverse
+
+import (
+	"fmt"
+	"os"
+	"strings"
+)
 
 //read contents line by line
 func ReadFile(fileName string) ([]string, bool) {
