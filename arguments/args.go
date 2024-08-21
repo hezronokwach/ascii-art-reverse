@@ -47,13 +47,24 @@ func Args() {
 		return
 	}
 
+	if len(file) != 9 {
+		fmt.Println("incorrect number of ASCII lines")
+		os.Exit(1)
+	}
+
 	str := ""
 	for len(file[0]) > 0 {
+		found := false
 		for i, val := range sliceadBanner {
 			if reverse.CheckPattern(val, file) {
 				str += string(rune(i + 32))
 				file = reverse.TrimFound(len(val[0]), file)
+				found = true
+				break
 			}
+		}
+		if !found {
+			break
 		}
 	}
 	fmt.Println(str)
