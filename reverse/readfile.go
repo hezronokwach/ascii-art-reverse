@@ -13,6 +13,11 @@ func ReadFile(fileName string) ([]string, bool) {
 		fmt.Printf("error %d\n", err)
 		return nil, true
 	}
-	lines := strings.Split(string(content), "\n")
+	var lines []string
+	if fileName == "banners/thinkertoy.txt" {
+		lines = strings.Split(string(content), "\r\n")
+	} else {
+		lines = strings.Split(string(content), "\n")
+	}
 	return lines, false
 }
