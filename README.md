@@ -21,6 +21,18 @@ The program accepts a text file containing the ASCII art of a string and convert
 - **Programming Language**: The project is written in Go.
 - **Testing**: The project includes unit tests to verify the functionality of individual components.
 
+## Installation
+
+1. Clone the repository:
+   ```
+   $ git clone https://learn.zone01kisumu.ke/git/danyonyi/ascii-art-reverse.git
+   ```
+
+2. Navigate into the project's directory:
+   ```
+   $ cd ascii-art-reverse
+   ```
+
 ## Usage
 
 To use the `Ascii-reverse` program, follow these steps:
