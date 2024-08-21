@@ -22,7 +22,7 @@ func Args() {
 	case 1:
 		banner += "standard.txt"
 	case 2:
-		banner = args[1]
+		banner += args[1] + ".txt"
 	}
 
 	if !strings.Contains(arg, "--reverse=") {
